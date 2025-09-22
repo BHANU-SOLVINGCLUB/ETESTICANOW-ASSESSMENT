@@ -5,9 +5,11 @@ This repository contains two professional Flutter applications built for a mid-l
 ## 📱 Apps Overview
 
 ### 1. **TaskMaster** - Intelligent Task Management
+
 A comprehensive to-do and notes application with advanced features and beautiful UI.
 
 ### 2. **ShopFlow** - Modern E-commerce Product Browser
+
 A sleek product listing app with search, favorites, and dark mode support.
 
 ---
@@ -15,6 +17,7 @@ A sleek product listing app with search, favorites, and dark mode support.
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - Flutter SDK (3.8.1 or higher)
 - Dart SDK
 - Android Studio / VS Code
@@ -23,24 +26,25 @@ A sleek product listing app with search, favorites, and dark mode support.
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone <repository-url>
    cd flutter-assessment-apps
    ```
-
 2. **Install dependencies for TaskMaster**
+
    ```bash
    cd taskmaster
    flutter pub get
    ```
-
 3. **Install dependencies for ShopFlow**
+
    ```bash
    cd ../shopflow
    flutter pub get
    ```
-
 4. **Run the apps**
+
    ```bash
    # TaskMaster
    cd taskmaster
@@ -56,6 +60,7 @@ A sleek product listing app with search, favorites, and dark mode support.
 ## 📋 TaskMaster - To-Do App
 
 ### Features
+
 - ✅ **Add, Edit, Delete Tasks** - Complete CRUD operations
 - ✅ **Mark Complete/Incomplete** - Toggle task status
 - ✅ **Two Tabs** - Pending & Completed tasks
@@ -69,6 +74,7 @@ A sleek product listing app with search, favorites, and dark mode support.
 - ✅ **Beautiful UI** - Modern Material Design 3
 
 ### Architecture
+
 ```
 lib/
 ├── models/          # Task data models
@@ -80,6 +86,7 @@ lib/
 ```
 
 ### Key Dependencies
+
 - `provider` - State management
 - `hive` - Local database
 - `google_fonts` - Typography
@@ -91,6 +98,7 @@ lib/
 ## 🛍️ ShopFlow - Product Listing App
 
 ### Features
+
 - ✅ **Product Grid** - Beautiful grid layout with images
 - ✅ **Search Functionality** - Search by title, category, description
 - ✅ **Category Filter** - Filter products by category
@@ -103,6 +111,7 @@ lib/
 - ✅ **Responsive UI** - Works on different screen sizes
 
 ### Architecture
+
 ```
 lib/
 ├── models/          # Product data models
@@ -114,6 +123,7 @@ lib/
 ```
 
 ### Key Dependencies
+
 - `flutter_riverpod` - State management
 - `http` - API calls
 - `cached_network_image` - Image caching
@@ -125,6 +135,7 @@ lib/
 ## 🎯 Assessment Criteria Met
 
 ### UI & UX (Excellent - 5/5)
+
 - ✅ Clean, responsive design
 - ✅ Modern Material Design 3
 - ✅ Intuitive user experience
@@ -132,12 +143,14 @@ lib/
 - ✅ Consistent theming
 
 ### Functionality (Excellent - 5/5)
+
 - ✅ All required features implemented
 - ✅ Additional bonus features
 - ✅ Smooth performance
 - ✅ No critical bugs
 
 ### Code Quality (Excellent - 5/5)
+
 - ✅ Well-structured, modular code
 - ✅ Clean architecture patterns
 - ✅ Proper separation of concerns
@@ -145,18 +158,21 @@ lib/
 - ✅ Comprehensive comments
 
 ### State Management (Excellent - 5/5)
+
 - ✅ Provider for TaskMaster
 - ✅ Riverpod for ShopFlow
 - ✅ Clean, predictable state updates
 - ✅ Proper error handling
 
 ### Error Handling (Excellent - 5/5)
+
 - ✅ Graceful loading states
 - ✅ User-friendly error messages
 - ✅ Network error handling
 - ✅ Data validation
 
 ### Bonus Features (Excellent - 5/5)
+
 - ✅ Dark mode support (both apps)
 - ✅ Favorites system (ShopFlow)
 - ✅ Due dates and sorting (TaskMaster)
@@ -169,6 +185,7 @@ lib/
 ## 🧪 Testing
 
 ### Running Tests
+
 ```bash
 # TaskMaster tests
 cd taskmaster
@@ -180,6 +197,7 @@ flutter test
 ```
 
 ### Test Coverage
+
 - Unit tests for business logic
 - Widget tests for UI components
 - Integration tests for user flows
@@ -189,6 +207,7 @@ flutter test
 ## 📱 Screenshots
 
 ### TaskMaster
+
 - Home screen with task statistics
 - Task list with swipe actions
 - Add/Edit task form
@@ -196,6 +215,7 @@ flutter test
 - Dark mode support
 
 ### ShopFlow
+
 - Product grid with beautiful cards
 - Search and category filters
 - Product detail screen
@@ -207,6 +227,7 @@ flutter test
 ## 🔧 Development
 
 ### Code Generation
+
 ```bash
 # TaskMaster (Hive adapters)
 cd taskmaster
@@ -218,11 +239,13 @@ flutter packages pub run build_runner build
 ```
 
 ### Linting
+
 ```bash
 flutter analyze
 ```
 
 ### Formatting
+
 ```bash
 flutter format .
 ```
@@ -232,16 +255,19 @@ flutter format .
 ## 📦 Build & Deploy
 
 ### Android APK
+
 ```bash
 flutter build apk --release
 ```
 
 ### iOS (macOS only)
+
 ```bash
 flutter build ios --release
 ```
 
 ### Web
+
 ```bash
 flutter build web --release
 ```
@@ -251,11 +277,13 @@ flutter build web --release
 ## 🏗️ Architecture Decisions
 
 ### TaskMaster
+
 - **Provider** for state management (simpler than BLoC for this use case)
 - **Hive** for local storage (lightweight, no SQL)
 - **Clean Architecture** with separation of concerns
 
 ### ShopFlow
+
 - **Riverpod** for state management (modern, type-safe)
 - **HTTP** for API calls (simple, reliable)
 - **Cached Network Image** for performance
@@ -265,6 +293,7 @@ flutter build web --release
 ## 🚀 Future Enhancements
 
 ### TaskMaster
+
 - [ ] Task sharing
 - [ ] Team collaboration
 - [ ] Advanced analytics
@@ -272,6 +301,7 @@ flutter build web --release
 - [ ] Location-based reminders
 
 ### ShopFlow
+
 - [ ] Shopping cart
 - [ ] User authentication
 - [ ] Product reviews
@@ -283,21 +313,3 @@ flutter build web --release
 ## 📄 License
 
 This project is created for assessment purposes.
-
----
-
-## 👨‍💻 Developer
-
-**ETESTICANOW Assessment**
-- Clean, professional code
-- Modern Flutter best practices
-- Comprehensive feature set
-- Beautiful, responsive UI
-
----
-
-## 📞 Support
-
-For any questions or issues, please refer to the Flutter documentation or create an issue in the repository.
-
-**Happy Coding! 🎉**
